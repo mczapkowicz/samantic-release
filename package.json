@@ -1,0 +1,36 @@
+{
+  "name": "@maykel/semantic-release",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mczapkowicz/samantic-release.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mczapkowicz/samantic-release/issues"
+  },
+  "homepage": "https://github.com/mczapkowicz/samantic-release#readme",
+  "devDependencies": {
+    "semantic-release": "^23.1.1"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ]
+    ]
+  }
+}
